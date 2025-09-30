@@ -1,6 +1,6 @@
 //introduction to object
 
-// create an object to create yhe student data 
+// create an object to create yhe student data
 // const name ="piyush";
 // const age= 18;
 // const address="pune";
@@ -13,11 +13,11 @@
 // const parentaddress= " pune";
 
 
-// object cretion 
+// object cretion
 // const studentobj ={
 //     neme : "piyush",
 //     age: 18,
-//     address: "pune ", 
+//     address: "pune ",
 //     standard : 12,
 // }
 
@@ -30,12 +30,12 @@
 
 
 
-// create an person  with name  , age , city object of 
+// create an person  with name  , age , city object of
 
 // const studentobj ={
 //     name : "Raj",
 //     age: 18,
-//     city : "pune ", 
+//     city : "pune ",
 // }
 
 // console.log ( " student : ", studentobj);
@@ -45,7 +45,7 @@
 // studentobj.name =" prathamesh";
 // studentobj.city =" nagpur";
 
-// // print thr age 
+// // print thr age
 
 // console.log ( "student age : ",studentobj.age );
 
