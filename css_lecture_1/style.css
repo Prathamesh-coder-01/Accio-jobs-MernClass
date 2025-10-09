@@ -1,0 +1,80 @@
+/* 
+universal selection : changes the property foe each element
+
+*/
+* {
+    /* color is applied using existing color name */
+    /*  we can add the famaly font */
+    color: rgb(219, 36, 36);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* syntax 
+ 
+selector{
+property :value 
+
+*/
+
+/* element selector :tag */
+
+h1 {
+    /* color is applied using rgb */
+    color: rgb(12, 200, 255);
+}
+
+p {
+    /*  color is applied using rgba , a->alpha,which helps setting 
+    the transperency also */
+    color: rgba(107, 51, 174, 0.991);
+    font-size: 20px;
+    /* text-align: center , left , right  */
+    text-align: justify;
+    text-decoration: underline;
+    /* line - through , underline , overvline*/
+    line-height: 50px;
+}
+
+span {
+    font-size: 2rem;
+}
+
+h2 {
+    /*  color is applied using hexa code ,which is #rrggbb */
+    color: #893939;
+}
+
+a {
+    /* text-decouration :none ishe,lping to remove the 
+    underline form another tag  */
+    text-decoration: none;
+    text-transform: capitalize;
+    text-decoration: 50px;
+    /* capitalize , uppercase , lowercase */
+}
+
+/* unit  in css
+px --> fixed pixels
+% --> percentage of parent element
+em --> relative to parent's font size 
+rem -->relative to root's font size  
+vh/vw --> related to view port 's(screen )hight /width
+*/
+
+
+button {
+    font-size: 20px;
+    background: rgb(233, 233, 149);
+    text-decoration: brown;
+    padding: 50px 150px 80px;
+    text-align: justify;
+
+}
+
+/* PADDING IN CSS 
+ padding : 50 px --> this  means all the 4 sides (T , B ,R , L ) will apply the padding to all
+ padding : 50 px 150 px --> this means 50px remains same and (T&B) but the left and right side changes (L&R) and apply for the padding 
+ padding : 50px 150px 80px --> in this the padding of 80px changes from the right side will apply on padding 
+ padding : 
+*/

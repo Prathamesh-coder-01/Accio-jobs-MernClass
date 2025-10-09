@@ -70,104 +70,104 @@
 // //==============================================================================================================================
 
 
-/*Q1: given an array object ,containing details of users ,console the name of first user aged above 30 */
+// /*Q1: given an array object ,containing details of users ,console the name of first user aged above 30 */
 
-let users1 = [
-    { name: "Alice", age: 25, active: true },
-    { name: "Bob", age: 28, active: false },
-    { name: "Charlie", age: 35, active: true },
-    { name: "David", age: 40, active: false }
-];
+// let users1 = [
+//     { name: "Alice", age: 25, active: true },
+//     { name: "Bob", age: 28, active: false },
+//     { name: "Charlie", age: 35, active: true },
+//     { name: "David", age: 40, active: false }
+// ];
 
-let findName = users1.find(user => user.age >= 30);
+// let findName = users1.find(user => user.age >= 30);
 
-if (findName) {
-    console.log(findName.name);
-}
-
-
-// Q2: print the name and age of the user :
-
-console.log(`Name: ${findName.name}, Age: ${findName.age}`);
-
-//***************************************************************************************************** */
+// if (findName) {
+//     console.log(findName.name);
+// }
 
 
-let users = [
-    { name: "Alice", age: 25, active: true },
-    { name: "Bob", age: 28, active: false },
-    { name: "Charlie", age: 35, active: true },
-    { name: "David", age: 40, active: false }
-];
+// // Q2: print the name and age of the user :
 
-//Q3:  function to create an array of the names of above user
+// console.log(`Name: ${findName.name}, Age: ${findName.age}`);
+
+// //***************************************************************************************************** */
 
 
-function getName(usersArray) {
-    return usersArray.map(user => user.name);
-}
+// let users = [
+//     { name: "Alice", age: 25, active: true },
+//     { name: "Bob", age: 28, active: false },
+//     { name: "Charlie", age: 35, active: true },
+//     { name: "David", age: 40, active: false }
+// ];
 
-let allName = getName(users);
-console.log(allName);
+// //Q3:  function to create an array of the names of above user
 
 
+// function getName(usersArray) {
+//     return usersArray.map(user => user.name);
+// }
 
-// Q4 : function to display all the active users from user arr  
-
-function getActiveUser(usersArray) {
-    return usersArray.filter(user => user.active);
-}
-let activeUsers = getActiveUser(users);
-console.log(activeUsers);
+// let allName = getName(users);
+// console.log(allName);
 
 
 
-// Q5 : functon to find the sum of allusers belo 30 
+// // Q4 : function to display all the active users from user arr  
 
-
-function getSumOfAges(usersArray) {
-    return usersArray.reduce((sum, user) => {
-        return user.age < 30 ? sum + user.age : sum;
-    }, 0);
-}
-
-console.log(getSumOfAges(users));
-
-// Q6 : function to get the names of all active users 
+// function getActiveUser(usersArray) {
+//     return usersArray.filter(user => user.active);
+// }
+// let activeUsers = getActiveUser(users);
+// console.log(activeUsers);
 
 
 
-/* ==================passing the function as an argument & return a function  */
+// // Q5 : functon to find the sum of allusers belo 30 
 
 
-function calculate(a, b, opperation) {
-    return opperation(a, b);
-}
-function multiply(a, b) {
-    return a * b;
-}
+// function getSumOfAges(usersArray) {
+//     return usersArray.reduce((sum, user) => {
+//         return user.age < 30 ? sum + user.age : sum;
+//     }, 0);
+// }
 
-function add(a, b) {
-    return a + b;
-}
+// console.log(getSumOfAges(users));
 
-function sub(a, b) {
-    return a - b;
-}
-let sum34 = calculate(3, 4, add);
-console.log({ sum34 });
+// // Q6 : function to get the names of all active users 
 
 
 
-//===========ERROR HANDALING ===============
+// /* ==================passing the function as an argument & return a function  */
 
-/*
-once --> restricts a function to be called more than once
-memoization --> if a function is called with same args as before, it will not calculate the result again, 
-                it will find the result from a cache where result of 
-                previous function call with same args is stored
 
-*/
+// function calculate(a, b, opperation) {
+//     return opperation(a, b);
+// }
+// function multiply(a, b) {
+//     return a * b;
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// function sub(a, b) {
+//     return a - b;
+// }
+// let sum34 = calculate(3, 4, add);
+// console.log({ sum34 });
+
+
+
+// //===========ERROR HANDALING ===============
+
+// /*
+// once --> restricts a function to be called more than once
+// memoization --> if a function is called with same args as before, it will not calculate the result again, 
+//                 it will find the result from a cache where result of 
+//                 previous function call with same args is stored
+
+// */
 
 
 
