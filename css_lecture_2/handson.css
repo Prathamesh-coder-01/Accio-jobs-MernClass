@@ -1,0 +1,57 @@
+:root {
+    --btn-colour: blue;
+    --bg--colour: yellow;
+    --default-colour: green;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin : 10px;
+    margin-right: 10px;
+}
+
+body {
+    background-color: var(--bg--colour);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    margin: 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--default-colour);
+}
+
+.gallary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    flex: 0 0 250px;
+    border: 2px solid var(--default-colour);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    background-color: var(--default-colour);
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}

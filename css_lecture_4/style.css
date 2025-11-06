@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: gray;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(42, 35, 35);
+
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-right:1px ;
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+#settings {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: calc(20%-40px);
+}
+
+.content {
+    text-decoration: underline;
+    display: grid;
+    background-color: rgb(96, 155, 242);
+}
+
+.title {
+
+    background-color: rgb(81, 35, 246);
+
+}
+
+.suggestions {
+    background-color: rgb(246, 180, 57);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.suggestions {
+
+    border: 1px solid white;
+    width: 300px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+}
+
+.chat {
+
+    text-align: center;
+    background-color: olive;
+    align-content: center;
+}
+.chat .text{
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.chat.btn{
+    padding: 10px 20px;
+    background-color: inherit;
+    border: white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
