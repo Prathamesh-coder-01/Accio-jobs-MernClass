@@ -1,0 +1,51 @@
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 100px;
+}
+
+.container .box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(238, 234, 117);
+    margin-bottom: 50px;
+    border: solid #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.transition {
+    transition-property: width, background-color;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+
+body:hover.box {
+    /*background-color: blanchedalmond;
+    width: 600px;*/
+
+    transform: rotate(45deg);
+    transform: rotate(-45deg);
+    transform: rotate(0.5deg);
+    transform: slow;
+
+    transform: translate(100px);
+    transform: translate(400px);
+    transform: translate(-50%, -200px);
+}
+
+/* 
+x = -ve --> left;
+x = +ve --> right;
+y = +ve --> down;
+y = -ve --> up;
+
+*/
+/* note we can combine all the trnsform attributes */

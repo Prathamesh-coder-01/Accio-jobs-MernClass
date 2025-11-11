@@ -1,0 +1,28 @@
+ .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(233, 187, 179);
+      background-repeat:no-repeat ;
+      background-position:center;
+    }
+
+
+body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#87CEEB, #E0F7FF);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      border-radius: 10px;
+      position: relative;
+      transition: all 0.8s ease-in-out; /* smooth movement */
+    }
+
+    

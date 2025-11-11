@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfafa;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 86, 121);
+    border-radius: 50px;
+    animation-name: Bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 86, 121);
+    border-radius: 50px;
+    animation-name: Bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.4s;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 86, 121);
+    border-radius: 50px;
+    animation-name: Bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.6s;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 86, 121);
+    border-radius: 50px;
+    animation-name: Bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.8s;
+}
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 86, 121);
+    border-radius: 50px;
+    animation-name: Bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes Bounce {
+    form {
+        transform: translateY();
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+
