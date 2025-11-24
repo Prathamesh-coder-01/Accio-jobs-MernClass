@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="great-grand-parent ">
+
+        <div class="grand-parent">
+
+            <div class="parent">
+
+                <div class="child">child</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="parent">
+        <div class="parent1"></div>
+        <div class="parent2"></div>
+        <div class="parent3"></div>
+        <div class="parent4"></div>
+        <div class="parent5"></div>
+    </div>
+</body>
+<script>
+    // accessing the child element:
+const child = document.querySelector(".child");
+console.log(child.parentElement); // parent
+
+// accessing the parent element:
+const parent = document.querySelector(".parent");
+console.log(parent.parentElement); // grand-parent
+
+// accessing the grand-parent element :
+const grandparent = document.querySelector(".grand-parent");
+console.log(grandparent.parentElement); // great-grand-parent
+
+// getting the parent of the body, which is html
+console.log(document.body.parentElement); // <html>
+
+// getting the parent of html, which is null
+console.log(document.documentElement.parentElement); // null
+
+// searching the nearest parent using closest()
+console.log(child.closest(".parent")); // gives the node of parent
+
+// accessing great-grand-parent using closest()
+const greatgrandparent = child.closest(".great-grand-parent");
+console.log(greatgrandparent);
+
+// accessing element with class accio
+const accio = child.closest(".accio");
+console.log(accio);
+
+
+
+    let element = child;
+    while (element.parentElement != document.body) {
+        element = element.parentElement;
+    }
+    element.classList.add("accio");
+    console.log(element);
+
+
+
+
+
+
+    console.log ( element.tagName,element.parentElement.tagName);
+
+    // adding the cllass= accio to bodys first class
+     document.body.children[0].classList.add("accio");
+
+     //iterating the 
+     for(let child of children){
+        console.log (child.childName);
+     }
+
+     //sibllings
+     const secondchild=parent2.child[1];
+     console.log ("prev sibling :",secondchild.previousElementSibling);
+     console.log("next sibling", secondchild.next)
+
+
+     
+
+
+     
+
+
+</script>
+
+</html>

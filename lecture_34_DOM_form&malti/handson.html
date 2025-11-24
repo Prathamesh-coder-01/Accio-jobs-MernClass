@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="handson.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><u>Contact Us</u></h1>
+    <form id="contactForm">
+      <div class="name">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Full name" required />
+      </div>
+
+      <div class="mobile">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" placeholder="+91 87xxxxxx30" required />
+      </div>
+
+      <div class="gender">
+        <label>Gender:</label>
+        <label for="male">Male</label>
+        <input name="gender" type="radio" id="male" value="Male" />
+        <label for="female">Female</label>
+        <input name="gender" type="radio" id="female" value="Female" />
+      </div>
+
+      <div class="city">
+        <label for="city">City:</label>
+        <select id="city" required>
+          <option value="">Select city</option>
+          <option>Pune</option>
+          <option>Mumbai</option>
+          <option>Nashik</option>
+          <option>Lucknow</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="handson.js"></script>
+</body>
+</html>

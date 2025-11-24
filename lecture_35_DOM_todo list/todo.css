@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    margin-top: 20px;
+    background: white;
+    padding: 35px;
+    width: 250px;
+    border-radius: 10px;    
+    box-shadow: 10px #ccc;
+}
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #999;
+}
+.input-box button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
