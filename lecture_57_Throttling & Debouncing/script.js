@@ -2,6 +2,8 @@
 
 /*
 Throttling -->
+📌 Meaning:
+Throttling मध्ये function ठराविक वेळेत (interval मध्ये) फक्त एकदाच execute होतो, कितीही वेळा event trigger झाला तरी.
 
 Throttling allows a function to run at regular time intervals,
  no matter how many times the event happens. 
@@ -9,8 +11,13 @@ Throttling allows a function to run at regular time intervals,
  once every 1 second even if you keep scrolling continuously.
 
 
+
  
 Debouncing -->
+📌 Meaning:
+Debouncing मध्ये function user ने event थांबवल्यावरच execute होतो.
+
+
 
 Debouncing allows a function to run only after the event has
  stopped for a certain amount of time. For example, 
@@ -18,11 +25,6 @@ Debouncing allows a function to run only after the event has
  you stop typing for 1 second.
 
 */
-
-
-
-
-
 
 /* window.addEventListener("scroll", () => {
   console.log("scrolled");
@@ -64,6 +66,8 @@ function throttle(fn, delay) {
 const throttledScroll = throttle(handleScroll, 1000);
 window.addEventListener("scroll", throttledScroll);
 
+
+// ==============================  Debouncing  ==============================================
 /* 
 timeline of debouncing with delay = 3s
 
