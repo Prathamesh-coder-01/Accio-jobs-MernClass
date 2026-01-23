@@ -1,0 +1,41 @@
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.form-box{
+  border: 2px solid black ;
+  padding: 40px;
+  width: 400px;
+}
+.form-box input,
+.form-box textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  background: transparent;
+  outline: none;
+}
+.form-box textarea{
+  resize: none;
+  height: 70px;
+}
+
+.form-box button{
+  width: 150px;
+  padding: 10px;
+  background: transparent;
+  color:black;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.form-box button{
+  background-color: #66b0fa;
+  color: black;
+}
+
