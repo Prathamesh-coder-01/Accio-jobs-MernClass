@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background: #111;
+    color: white;
+    font-family: Arial;
+}
+
+.box {
+    width: 500px;
+    margin: 70px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: rgb(255, 255, 255);
+    color: #111;
+    
+}
+
+.btn {
+    background-color: rgb(64, 163, 233);
+    color: #111;
+    padding: 10px;
+
+}
+button:hover{
+    background-color: #f2adad;
+    cursor: pointer;
+}
